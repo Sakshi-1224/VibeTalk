@@ -7,7 +7,8 @@ let app = express()
 const server=http.createServer(app)
 const io=new Server(server,{
     cors:{
-        origin:"https://vibetalk-5rjc.onrender.com"
+        origin:"https://vibetalk-5rjc.onrender.com",
+        credentials:true
     }
 })
  const userSocketMap ={}
