@@ -43,7 +43,12 @@ try {
 }
 }
   return (
-    <div className='w-full h-[100vh] bg-slate-200 flex flex-col justify-center items-center gap-[20px]'>
+   <div
+  className="w-full h-[100vh] bg-cover flex justify-center items-center"
+  style={{
+    backgroundImage: `url("https://img.freepik.com/free-vector/emoji-framed-background_53876-89764.jpg?semt=ais_hybrid&w=740")`,
+  }}
+>
         <div className='fixed top-[20px] left-[20px] cursor-pointer' onClick={()=>navigate("/")}>
         <IoIosArrowRoundBack className='w-[50px] h-[50px] text-gray-600'/>
         </div>
