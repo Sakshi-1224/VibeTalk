@@ -62,7 +62,7 @@ return ()=>socket?.off("newMessage")
       
 {selectedUser && 
 <div className='w-full h-[100vh] flex flex-col overflow-hidden gap-[20px] items-center'>
-<div className='w-full h-[100px] bg-[#1797c2] rounded-b-[30px] shadow-gray-400 shadow-lg gap-[20px] flex items-center px-[20px] '>
+<div className='w-full h-[100px] bg-[#2e6ac9] rounded-b-[30px] shadow-gray-400 shadow-lg gap-[20px] flex items-center px-[20px] '>
            <div className='cursor-pointer' onClick={()=>dispatch(setSelectedUser(null))}>
                   <IoIosArrowRoundBack className='w-[40px] h-[40px] text-white'/>
            </div>
@@ -86,7 +86,7 @@ return ()=>socket?.off("newMessage")
     }
 {selectedUser && <div className='w-full lg:w-[70%] h-[100px] fixed bottom-[20px] flex items-center justify-center '>
       <img src={frontendImage} alt="" className='w-[80px] absolute bottom-[100px] right-[20%] rounded-lg shadow-gray-400 shadow-lg'/>
-     <form className='w-[95%] lg:w-[70%] h-[60px] bg-[rgb(23,151,194)] shadow-gray-400 shadow-lg rounded-full flex items-center gap-[20px] px-[20px] relative' onSubmit={handleSendMessage}>
+     <form className='w-[95%] lg:w-[70%] h-[60px] bg-[#2e6ac9] shadow-gray-400 shadow-lg rounded-full flex items-center gap-[20px] px-[20px] relative' onSubmit={handleSendMessage}>
       
        <div onClick={()=>setShowPicker(prev=>!prev)}>
        <RiEmojiStickerLine  className='w-[25px] h-[25px] text-white cursor-pointer'/>
